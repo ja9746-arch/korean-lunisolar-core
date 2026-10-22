@@ -1,0 +1,51 @@
+{
+  "name": "korean-lunisolar-core",
+  "version": "0.1.0",
+  "description": "Dependency-free TypeScript utilities for Korean civil time and calendrical boundary handling.",
+  "type": "module",
+  "license": "MIT",
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ja9746-arch/korean-lunisolar-core.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ja9746-arch/korean-lunisolar-core/issues"
+  },
+  "homepage": "https://github.com/ja9746-arch/korean-lunisolar-core#readme",
+  "keywords": [
+    "korea",
+    "calendar",
+    "kst",
+    "lunisolar",
+    "solar-terms",
+    "typescript"
+  ],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "build": "tsc -p tsconfig.build.json",
+    "check": "npm test && npm run typecheck && npm run build",
+    "prepare": "npm run build"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.4"
+  }
+}
