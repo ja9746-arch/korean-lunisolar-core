@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { UnsupportedRangeError } from '../src/index.js';
+import { UnsupportedRangeError } from '../src/index.ts';
 
 describe('package surface', () => {
   it('exports UnsupportedRangeError with a stable name and message', () => {
